@@ -1,3 +1,3 @@
 # Learning_CPlusPlus
-Repository contains my learning materials  
-Learning C++ from learncpp.com
+Repository contains my C++ learning materials  
+Learning C++ from learncpp.com  
