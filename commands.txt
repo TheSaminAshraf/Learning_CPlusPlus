@@ -1,0 +1,18 @@
+gcc
+g++ fileName1.cpp fileName2.cpp ... -o outputFileName
+
+VS Code
+To create a new file, choose View > Explorer from the top nav to open the Explorer pane, and
+then click the New File icon to the right of the project name. Alternately,
+choose File > New File from the top nav. Then give your new file a name
+(don’t forget the .cpp extension). If the file appears inside the .vscode folder,
+drag it up one level to the project folder.
+Next open the tasks.json file, and find the line "${file}",.
+You have two options here:
+If you wish to be explicit about what files get compiled, replace "${file}", with the name of
+each file you wish to compile, one per line, like this:
+"main.cpp",
+"add.cpp",
+Reader “geo” reports that you can have VS Code automatically compile all .cpp files in the
+directory by replacing "${file}", with "${fileDirname}\\**.cpp" (on Windows).
+Reader “Orb” reports that "${fileDirname}/**.cpp" works on Unix.
